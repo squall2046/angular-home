@@ -1,0 +1,19 @@
+<!-- news 是父组件, footer 是子组件 -->
+
+<!-- <app-footer #footer></app-footer> -->
+
+<!-- // Output方法, 子组件传播数据给父组件, 触发父组件方法 -->
+<!-- // step5: -->
+<app-footer #footer (outer)='run()'></app-footer>
+
+
+<hr />
+<br />
+<br />
+<div>news page</div>
+<br />
+<br />
+<hr />
+
+<button (click)='getChildData()'>父组件获取子组件数据</button><br /><br />
+<button (click)='getChildMethod()'>父组件获取子组件方法</button><br /><br />
